@@ -21,7 +21,7 @@ class products extends Component {
                         <h3>{product.title}</h3>
                         <p></p>
                         </a>
-                        <div className="productPrice">
+                        <div className="productPrice pdt">
                         <div>{priceFormatter(product.price)}</div>
                         <Button variant="primary">Add to cart</Button>
                         </div>
