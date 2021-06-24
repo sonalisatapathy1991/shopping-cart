@@ -18,7 +18,7 @@ const Header = () => {
       {`
         .intro{
             color: white !important;
-            font-size:2.4rem !important;
+            font-size:2.3rem !important;
         }
         .intro:hover {
           color: #ca650e !important;git remote add origin https://github.com/sonalisatapathy1991/shopping-cart.git
