@@ -3,9 +3,9 @@ import {Container} from 'react-bootstrap';
 
 const Footer = () => {
     const footerCls = {backgroundColor:'#202311',
-    color:'#f0f00f',
+    color:'#e9ecef',
     textAlign:'center',
-    position:'sticky',
+    position:'fixed',
     bottom:0
 }
     return (
@@ -16,3 +16,5 @@ All rights reserved.
 }
 
 export default Footer;
+
+ 

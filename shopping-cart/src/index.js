@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './index.css';
+
 import App from './App';
 //new changes
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>,
+  </>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
