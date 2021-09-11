@@ -42,4 +42,5 @@ connectDB();
 app.use('/api/products', product);
 app.use('/api/sizes', sizes);
 const port = parseInt(process.env.PORT) || 5000;
+
 app.listen(port, () => console.log(`serve at http://localhost:${port}`));
