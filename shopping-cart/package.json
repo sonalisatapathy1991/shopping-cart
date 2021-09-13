@@ -1,6 +1,5 @@
 {
   "name": "shopping-cart",
-  "proxy": "https://mern-begin.herokuapp.com/",
   "type": "module",
   "target": "esnext",
   "module": "commonjs",
@@ -46,7 +45,8 @@
     "dev": "concurrently  \"react-scripts start\" \"nodemon server.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "eslintConfig": {
     "extends": [
