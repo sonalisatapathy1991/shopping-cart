@@ -1,5 +1,6 @@
 {
   "name": "shopping-cart",
+  "proxy": "https://mern-begin.herokuapp.com/",
   "type": "module",
   "target": "esnext",
   "module": "commonjs",
