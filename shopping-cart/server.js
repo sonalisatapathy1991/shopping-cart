@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import product from './routes/api/product.js';
 import sizes from './routes/api/sizes.js';
-const path = require('path');
+import path from 'path';
 
 const app = express();
 app.use(bodyParser.json());
@@ -36,14 +36,18 @@ app.use('/api/sizes', sizes);
 //   import dotenv from 'dotenv';
 //   dotenv.config();
 // }
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static("/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "/build/index.html"))
-  }
-  );
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static("/build"));
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "/build/index.html"))
+//   }
+//   );
+// }
 
+app.use(express.static(path.join(__dirname, '../build')))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build'))
+})
 
 const port = parseInt(process.env.PORT) || 5000;
 
