@@ -1,6 +1,5 @@
 {
   "name": "shopping-cart",
-  "proxy": "http://localhost:8080",
   "type": "module",
   "target": "esnext",
   "module": "commonjs",
@@ -43,15 +42,13 @@
   "scripts": {
     "server": "nodemon server.js",
     "start": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
+    "heroku-postbuild": "npm install && npm run build",
     "dev": "concurrently  \"react-scripts start\" \"nodemon server.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "engines": {
-    "node": "17.0.2"
-  },
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": [
       "react-app",
